@@ -1,0 +1,10 @@
+ragas
+datasets
+pandas
+pyyaml
+tqdm
+openai
+# perspective-api-client  # Comentado porque no está disponible por pip
+fastapi
+uvicorn[standard]
+python-multipart

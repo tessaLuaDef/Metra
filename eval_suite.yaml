@@ -1,0 +1,10 @@
+suite_name: evaluacion_basica
+metrics:
+  - name: faithfulness
+    weight: 0.25
+  - name: context_precision
+    weight: 0.25
+  - name: toxicity
+    weight: 0.25
+  - name: bias_stereoset
+    weight: 0.25
