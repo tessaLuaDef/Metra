@@ -4,7 +4,11 @@ pandas
 pyyaml
 tqdm
 openai
-# perspective-api-client  # Comentado porque no está disponible por pip
+spacy
 fastapi
 uvicorn[standard]
 python-multipart
+python-dotenv
+langchain-core
+langchain-community
+langchain-openai

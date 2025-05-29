@@ -1,25 +1,36 @@
-# main.py
-
 import argparse
-import yaml
+from datasets import load_dataset
+from evaluator.custom_metrics.composite_factuality import CompositeFactuality
+from evaluator.custom_metrics.ethical_evaluator import EthicalEvaluator
 from dotenv import load_dotenv
+from langchain_community.chat_models import ChatOllama
+
+# Cargar variables de entorno
 load_dotenv()
-from evaluator.pipeline import EvaluatorPipeline
 
-def cargar_configuracion(path_yaml):
-    with open(path_yaml, "r") as file:
-        return yaml.safe_load(file)
+# Inicializar modelo
+llm = ChatOllama(model="mistral")
 
-def main():
-    parser = argparse.ArgumentParser(description="Evaluador de modelos LLM RAG")
-    parser.add_argument("--input", type=str, required=True, help="Ruta al dataset JSON o CSV")
-    parser.add_argument("--suite", type=str, required=True, help="Ruta al archivo YAML con la suite de evaluación")
-    args = parser.parse_args()
+def main(input_file: str):
+    dataset = load_dataset("json", data_files=input_file)["train"]
 
-    config = cargar_configuracion(args.suite)
-
-    evaluador = EvaluatorPipeline(config)
-    evaluador.evaluar(args.input)
+    if "ethic" in input_file.lower():
+        print("\n Evaluando dimensión ética...")
+        ethical_scores, ethical_justifications = EthicalEvaluator().score(dataset, llm)
+        for i, (score, explanation) in enumerate(zip(ethical_scores, ethical_justifications)):
+            print(f"\n🔹 Entrada {i + 1}")
+            print(f"Ética - Score: {score:.2f}")
+            print(f"Ética - Justificación: {explanation}")
+    else:
+        print("\n Evaluando factualidad compuesta...")
+        scores, justifications = CompositeFactuality().score(dataset, llm)
+        for i, (score, explanation) in enumerate(zip(scores, justifications)):
+            print(f"\n🔹 Entrada {i + 1}")
+            print(f"Score: {score:.2f}")
+            print(f"Justificación: {explanation}")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=str, required=True, help="Ruta al archivo .json de entrada")
+    args = parser.parse_args()
+    main(args.input)
