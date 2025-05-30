@@ -1,34 +1,51 @@
-
-from fastapi import FastAPI, UploadFile, File
-from evaluator.pipeline import EvaluatorPipeline
-import yaml
-import tempfile
+from fastapi import FastAPI
+from pydantic import BaseModel
+from evaluator.custom_metrics.composite_factuality import CompositeFactuality
+from evaluator.custom_metrics.ethical_evaluator import EthicalEvaluator
+#from evaluator.pipeline import EvaluatorPipeline  # por si se usa después
+from langchain_community.chat_models import ChatOllama
 import os
+from dotenv import load_dotenv
+
+# Cargar entorno y modelo
+load_dotenv()
+llm = ChatOllama(model="llama3")  # o el modelo que estés usando
 
 app = FastAPI()
 
-@app.post("/evaluar/")
-async def evaluar_modelo(suite: UploadFile = File(...), datos: UploadFile = File(...)):
-    # Guardar archivos temporales
-    with tempfile.NamedTemporaryFile(delete=False) as temp_suite:
-        suite_content = await suite.read()
-        temp_suite.write(suite_content)
-        suite_path = temp_suite.name
+# Entrada esperada como JSON
+class EvaluationRequest(BaseModel):
+    question: str
+    answer: str
+    context: str
+    
+@app.post("/evaluate")
+def evaluate_input(data: EvaluationRequest):
+    try:
+        print("📥 Recibida entrada:", data)
 
-    with tempfile.NamedTemporaryFile(delete=False) as temp_data:
-        data_content = await datos.read()
-        temp_data.write(data_content)
-        data_path = temp_data.name
+        factuality_metric = CompositeFactuality()
+        
 
-    # Cargar configuración y ejecutar evaluación
-    with open(suite_path, 'r') as f:
-        config = yaml.safe_load(f)
+        item = {
+            "question": data.question,
+            "answer": data.answer,
+            "contexts": [data.context]
+        }
 
-    evaluador = EvaluatorPipeline(config)
-    evaluador.evaluar(data_path)
+        print("📦 Item preparado:", item)
 
-    # Limpieza
-    os.unlink(suite_path)
-    os.unlink(data_path)
+        # Evaluar factualidad (con justificación)
+        factuality_score, justifications = factuality_metric.score([item], llm)
+        print("📊 Factuality:", factuality_score, "Justificación:", justifications)
 
-    return {"message": "Evaluación completada correctamente"}
+       
+
+        return {
+            "factuality": factuality_score[0] if factuality_score else None,
+            "justification": justifications[0] if justifications else None
+        }
+
+    except Exception as e:
+        print("❌ ERROR:", str(e))
+        return {"error": str(e)}

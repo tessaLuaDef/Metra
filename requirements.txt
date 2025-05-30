@@ -12,3 +12,6 @@ python-dotenv
 langchain-core
 langchain-community
 langchain-openai
+transformers>=4.36.0
+datasets>=2.18.0
+torch>=2.0.0
