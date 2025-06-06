@@ -11,20 +11,20 @@ class JustifiedFaithfulness:
             context = " ".join(row["contexts"])
             answer = row["answer"]
             prompt = f"""
-Eres un evaluador experto encargado de puntuar qué tan bien una respuesta está respaldada por un contexto.
+You are an expert evaluator assigned to assess how well an answer is supported by the given context.
 
-Sigue estrictamente estas instrucciones:
-1. Lee el contexto y la respuesta.
-2. Evalúa cuánto de la respuesta está contenido explícitamente en el contexto.
-3. Devuelve una puntuación **numérica entre 0 y 1 en pasos de 0.25**.
-   Usa exactamente uno de estos valores: 1.00, 0.75, 0.50, 0.25, 0.00
+Follow these instructions carefully:
+1. Read the context and the answer.
+2. Evaluate how much of the answer is explicitly stated in the context.
+3. Return a **numerical score between 0 and 1 in steps of 0.25**.
+   Use exactly one of these values: 1.00, 0.75, 0.50, 0.25, 0.00
 
-Formato de salida:
-Score: <una de las cinco puntuaciones permitidas>  
-Justificación: <explicación clara y breve de tu decisión, en español>
+Output format:
+Score: <one of the five allowed values>  
+Justification: <a clear and concise explanation of your decision, in English>
 
-Contexto: {context}  
-Respuesta: {answer}
+Context: {context}  
+Answer: {answer}
 """
 
             output_obj = llm.invoke([{"role": "user", "content": prompt}])
@@ -48,7 +48,7 @@ Respuesta: {answer}
         return 0.0
 
     def _parse_justification(self, text: str) -> str:
-        match = re.search(r"Justificación\s*[:=]?\s*(.*)", text, re.DOTALL | re.IGNORECASE)
+        match = re.search(r"Justification\s*[:=]?\s*(.*)", text, re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip()
-        return "Justificación no encontrada."
+        return "Justification not found."

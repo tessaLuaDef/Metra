@@ -22,7 +22,7 @@ class EvaluationRequest(BaseModel):
 @app.post("/evaluate")
 def evaluate_input(data: EvaluationRequest):
     try:
-        print("📥 Recibida entrada:", data)
+        print(" Recibida entrada:", data)
 
         factuality_metric = CompositeFactuality()
         
@@ -33,11 +33,11 @@ def evaluate_input(data: EvaluationRequest):
             "contexts": [data.context]
         }
 
-        print("📦 Item preparado:", item)
+        print(" Item preparado:", item)
 
         # Evaluar factualidad (con justificación)
         factuality_score, justifications = factuality_metric.score([item], llm)
-        print("📊 Factuality:", factuality_score, "Justificación:", justifications)
+        print(" Factuality:", factuality_score, "Justificación:", justifications)
 
        
 
@@ -47,5 +47,5 @@ def evaluate_input(data: EvaluationRequest):
         }
 
     except Exception as e:
-        print("❌ ERROR:", str(e))
+        print(" ERROR:", str(e))
         return {"error": str(e)}
