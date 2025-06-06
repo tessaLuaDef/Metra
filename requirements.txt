@@ -1,17 +1,27 @@
+# Evaluación
 ragas
-datasets
+tqdm
 pandas
 pyyaml
-tqdm
+textblob
+
+# Modelos y procesamiento
+transformers>=4.36.0
+torch>=2.0.0
 openai
-spacy
+
+# Servidor API
 fastapi
 uvicorn[standard]
 python-multipart
+
+# Variables de entorno
 python-dotenv
+
+# LangChain
 langchain-core
 langchain-community
 langchain-openai
-transformers>=4.36.0
+
+# Datasets
 datasets>=2.18.0
-torch>=2.0.0

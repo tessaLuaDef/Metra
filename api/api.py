@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from evaluator.custom_metrics.composite_factuality import CompositeFactuality
-from evaluator.custom_metrics.ethical_evaluator import EthicalEvaluator
+from evaluator.custom_metrics.ethical_alignment import EthicalEvaluator
 #from evaluator.pipeline import EvaluatorPipeline  # por si se usa después
 from langchain_community.chat_models import ChatOllama
 import os
