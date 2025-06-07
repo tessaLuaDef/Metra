@@ -30,3 +30,4 @@ datasets>=2.18.0
 jupyter
 matplotlib
 seaborn
+notebook

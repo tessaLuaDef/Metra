@@ -32,8 +32,9 @@ class FactTripleCoverage:
     def score(self, dataset: Dataset) -> List[float]:
         scores = []
         for row in dataset:
-            facts = extract_facts(row["answer"])
-            present = [fact for fact in facts if any(fuzzy_in(fact, ctx) for ctx in row["contexts"])]
+            facts = extract_facts(row.get("answer", row.get("model_answer", "")))
+            context = row.get("context", " ".join(row.get("contexts", [])))
+            present = [fact for fact in facts if fuzzy_in(fact, context)]
             score = len(present) / len(facts) if facts else 0.0
             scores.append(score)
         return scores
@@ -48,8 +49,8 @@ class JustifiedFaithfulness:
         justifications = []
 
         for row in dataset:
-            context = " ".join(row["contexts"])
-            answer = row["answer"]
+            context = row.get("context", " ".join(row.get("contexts", [])))
+            answer = row.get("answer", row.get("model_answer", ""))
             prompt = f"""
 You are an expert evaluator assigned to assess how well an answer is supported by the given context.
 

@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipe
 from langchain_community.chat_models import ChatOllama
 import torch
 
-class MENLIPrecision:
+class MENLIAccuracy:
     def __init__(self, model_name="facebook/bart-large-mnli", ollama_model="mistral", generate_explanation=True):
         # NLI model setup
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
