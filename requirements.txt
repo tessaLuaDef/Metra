@@ -25,3 +25,8 @@ langchain-openai
 
 # Datasets
 datasets>=2.18.0
+
+# Notebooks y análisis
+jupyter
+matplotlib
+seaborn
