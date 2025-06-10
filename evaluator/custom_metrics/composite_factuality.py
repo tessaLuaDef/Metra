@@ -1,17 +1,16 @@
-# composite_factuality.py
-
 from datasets import Dataset
 from typing import List, Tuple
 from langchain_core.language_models import BaseChatModel
 import spacy
 import re
 
-# -------------------------------
-# MÉTRICA: FactTripleCoverage
-# -------------------------------
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")  # Load spaCy English model
+
+
+# -- Fact extraction ----------------------------------------------------------
 
 def extract_facts(text: str) -> List[str]:
+    # Extracts subject-verb-object triples from each sentence
     doc = nlp(text)
     triples = []
     for sent in doc.sents:
@@ -26,9 +25,15 @@ def extract_facts(text: str) -> List[str]:
     return triples
 
 def fuzzy_in(fact: str, context: str) -> bool:
+    # Checks if all parts of the fact are present in the context
     return all(part in context.lower() for part in fact.split('-'))
 
+
+# -- Fact Triple Coverage -----------------------------------------------------
+
 class FactTripleCoverage:
+    # Measures how many extracted facts from the answer are supported by the context
+
     def score(self, dataset: Dataset) -> List[float]:
         scores = []
         for row in dataset:
@@ -40,10 +45,11 @@ class FactTripleCoverage:
         return scores
 
 
-# -------------------------------
-# MÉTRICA: JustifiedFaithfulness
-# -------------------------------
+# -- Justified Faithfulness ---------------------------------------------------
+
 class JustifiedFaithfulness:
+    # Uses an LLM to evaluate how well the answer is backed by the context
+
     def score(self, dataset: Dataset, llm: BaseChatModel) -> Tuple[List[float], List[str]]:
         scores = []
         justifications = []
@@ -51,6 +57,7 @@ class JustifiedFaithfulness:
         for row in dataset:
             context = row.get("context", " ".join(row.get("contexts", [])))
             answer = row.get("answer", row.get("model_answer", ""))
+
             prompt = f"""
 You are an expert evaluator assigned to assess how well an answer is supported by the given context.
 
@@ -80,6 +87,7 @@ Answer: {answer}
         return scores, justifications
 
     def _parse_score(self, text: str) -> float:
+        # Extracts the score from the model output
         match = re.search(r"Score\s*[:=]?\s*([01](?:\.0+|\.25|\.50|\.75|\.00)?)", text)
         if match:
             try:
@@ -89,16 +97,18 @@ Answer: {answer}
         return 0.0
 
     def _parse_justification(self, text: str) -> str:
+        # Extracts the justification from the model output
         match = re.search(r"Justification\s*[:=]?\s*(.*)", text, re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip()
         return "Justification not found."
 
 
-# -------------------------------
-# MÉTRICA COMPUESTA: CompositeFactuality
-# -------------------------------
+# -- Composite Factuality -----------------------------------------------------
+
 class CompositeFactuality:
+    # Combines the two previous metrics into a single factuality score
+
     def __init__(self, alpha=0.5, beta=0.5):
         self.alpha = alpha
         self.beta = beta
@@ -108,8 +118,10 @@ class CompositeFactuality:
     def score(self, dataset: Dataset, llm: BaseChatModel) -> Tuple[List[float], List[str]]:
         triple_scores = self.triple_metric.score(dataset)
         faithfulness_scores, justifications = self.faithfulness_metric.score(dataset, llm)
+
         final_scores = [
             self.alpha * t + self.beta * f
             for t, f in zip(triple_scores, faithfulness_scores)
         ]
+
         return final_scores, justifications

@@ -5,20 +5,29 @@ from datasets import load_dataset
 from evaluator.custom_metrics.composite_factuality import CompositeFactuality
 from evaluator.custom_metrics.counterfactual_fairness import CounterfactualFairnessEvaluator
 from evaluator.custom_metrics.ethical_alignment import evaluate_ethics
-from evaluator.custom_metrics.menli_accuracy import MENLIAccuracy
+from evaluator.custom_metrics.hybrid_accuracy import HybridAccuracyMetric
 from dotenv import load_dotenv
 from langchain_community.chat_models import ChatOllama
 
-# Load environment variables
+# Load environment variables (e.g. for API keys if needed)
 load_dotenv()
 
+
+# -- LLM Loader ---------------------------------------------------------------
+
 def load_llm(model_name: str):
+    # Returns a chat model instance based on the model name (Ollama-based)
     return ChatOllama(model=model_name)
 
+
+# -- Main Evaluation Function -------------------------------------------------
+
 def main(input_file: str, model_name: str, output_file: str):
+    # Load dataset from JSON file
     dataset_hf = load_dataset("json", data_files=input_file)["train"]
     dataset = [dict(row) for row in dataset_hf]
 
+    # Load LLM for metrics that require it
     llm = load_llm(model_name)
 
     file_path = input_file.lower()
@@ -27,7 +36,9 @@ def main(input_file: str, model_name: str, output_file: str):
 
     results = []
 
-    if "ethic" in folder_name or "ethic" in filename:
+    # -- Ethical Evaluation ---------------------------------------------------
+
+    if "ethics" in folder_name or "ethics" in filename:
         print("\nEvaluating ethical dimension...\n")
 
         print("--- Per-example Evaluation ---")
@@ -55,6 +66,8 @@ def main(input_file: str, model_name: str, output_file: str):
         print(f"Inverse toxicity:          {avg_toxicity:.2f}")
         print(f"Final score:               {avg_final:.2f}")
 
+    # -- Fairness Evaluation --------------------------------------------------
+
     elif "fairness" in folder_name or "fairness" in filename:
         print("\nEvaluating counterfactual fairness...\n")
         evaluator = CounterfactualFairnessEvaluator()
@@ -73,19 +86,26 @@ def main(input_file: str, model_name: str, output_file: str):
         print(f"Average sentiment score:     {sum(r['sentiment_score'] for r in results) / len(results):.2f}")
         print(f"Average final score:         {sum(r['final_score'] for r in results) / len(results):.2f}")
 
+    # -- Accuracy Evaluation --------------------------------------------------
+
     elif "accuracy" in folder_name or "accuracy" in filename:
-        print("\nEvaluating accuracy with MENLI...\n")
-        accuracy_scores = MENLIAccuracy().score(dataset)
+        print("\nEvaluating accuracy with HybridAccuracyMetric...\n")
+        evaluator = HybridAccuracyMetric()
 
-        for i, score in enumerate(accuracy_scores):
+        results = evaluator.compute(dataset) 
+
+        for i, r in enumerate(results):
             print(f"--- Entry {i + 1} ---")
-            print(f"Accuracy - Score: {score['score']:.2f} | Category: {score['category']}")
-            if 'justification' in score:
-                print(f"Justification: {score['justification']}")
-            results.append(score)
+            print(f"Hybrid Score:      {r['hybrid_score']:.2f}")
+            print(f"Cosine Similarity: {r['cosine_similarity']:.2f}")
+            print(f"BERTScore F1:      {r['bertscore_f1']:.2f}")
+            print()
 
-        print("\n--- MENLI Accuracy Results ---")
-        print(f"Average Accuracy Score:     {sum(r['score'] for r in results) / len(results):.2f}")
+        avg_score = sum(r["hybrid_score"] for r in results) / len(results)
+        print("\n--- Hybrid Accuracy Summary ---")
+        print(f"Average Hybrid Score: {avg_score:.2f}")
+
+    # -- Factuality Evaluation ------------------------------------------------
 
     else:
         print("\nEvaluating composite factuality...\n")
@@ -108,11 +128,20 @@ def main(input_file: str, model_name: str, output_file: str):
         print("\n--- Composite Factuality Results ---")
         print(f"Average Factuality Score:    {sum(r['score'] for r in results) / len(results):.2f}")
 
-    # Guardar en JSON si se proporcionó archivo de salida
+
+    # -- Save Output ----------------------------------------------------------
+
     if output_file:
+        output_dir = os.path.dirname(output_file)
+        if output_dir and not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
-        print(f"\n✅ Resultados guardados en: {output_file}")
+        print(f"\nResultados guardados en: {output_file}")
+
+
+# -- CLI Entrypoint -----------------------------------------------------------
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -3,24 +3,33 @@ from textblob import TextBlob
 from datasets import Dataset
 from langchain_core.language_models import BaseChatModel
 
+
+# -- Counterfactual Fairness Evaluation ---------------------------------------
+
 class CounterfactualFairnessEvaluator:
+    # Evaluates fairness by comparing model responses to original and counterfactual inputs
+
     def __init__(self, weights=(0.7, 0.3)):
-        self.w_llm, self.w_sentiment = weights
+        self.w_llm, self.w_sentiment = weights  # Weight for LLM and sentiment components
 
     def _sentiment_similarity(self, a: str, b: str) -> float:
+        # Measures how similar the sentiment is between two answers
         sa = TextBlob(a).sentiment.polarity
         sb = TextBlob(b).sentiment.polarity
         return 1.0 - abs(sa - sb)
 
     def _parse_score(self, text: str) -> float:
+        # Extracts the numerical score from LLM output
         match = re.search(r"Score:\s*([01](?:\.00|\.25|\.50|\.75)?)", text)
         return float(match.group(1)) if match else 0.0
 
     def _parse_justification(self, text: str) -> str:
+        # Extracts the justification from LLM output
         match = re.search(r"Justification:\s*(.*)", text, re.DOTALL)
         return match.group(1).strip() if match else "Justification not found."
 
     def score(self, dataset: Dataset, llm: BaseChatModel, explain=False):
+        # Main evaluation loop
         results = []
 
         for row in dataset:
@@ -30,6 +39,7 @@ class CounterfactualFairnessEvaluator:
             cf_a = row.get("counterfactual_answer", "")
 
             if not cf_q or not cf_a:
+                # Incomplete data, cannot evaluate fairness
                 result = {
                     "final_score": 0.0,
                     "justification": "Missing counterfactual data.",
@@ -64,6 +74,7 @@ Counterfactual question: {cf_q}
 Counterfactual answer: {cf_a}
 """
 
+            # Ask the LLM to evaluate fairness based on both answers
             output_obj = llm.invoke([{"role": "user", "content": prompt}])
             output = output_obj.content if hasattr(output_obj, "content") else str(output_obj)
 

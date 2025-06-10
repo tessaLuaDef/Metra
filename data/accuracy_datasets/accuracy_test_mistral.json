@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Who cannot be employed by a school in any manner?",
+    "answer": "those who refuse vetting",
+    "model_answer": "A person who is convicted of certain sex offenses, as stipulated by law and regulations, cannot be employed by a school in any manner. However, the specifics may vary depending on the jurisdiction. It's always best to check local laws and regulations for accurate information."
+  },
+  {
+    "question": "What did Paul Rose say Luther added to German thought?",
+    "answer": "hysterical and demonizing mentality",
+    "model_answer": "According to the information available, Paul Rose is a historian who wrote \"Germany and the First World War,\" not someone specifically known for discussing the impact of Martin Luther on German thought. However, it's important to note that Martin Luther significantly influenced German religious thought during the Reformation era. He translated the Bible into German, which promoted literacy and fostered a sense of national identity among the German people. Luther's ideas also had a major impact on philosophy, politics, education, and culture in Germany and beyond. His teachings challenged traditional Catholic dogma, emphasizing faith alone (Sola Fide) as a path to salvation, and promoting individual conscience over ecclesiastical authority. These ideas influenced figures such as Friedrich Nietzsche and Immanuel Kant, thus contributing to the development of German intellectual thought."
+  },
+  {
+    "question": "In the layered model of the Earth, the outermost layer is what? ",
+    "answer": "crust",
+    "model_answer": "The outermost layer of the Earth in the layered model is called the Crust. It's the thinnest of the four main layers (Crust, Mantle, Outer Core, and Inner Core) and is divided into two types - the Continental Crust, which is dense and granitic, and the Oceanic Crust, which is denser and basaltic."
+  },
+  {
+    "question": "Who played quarterback for the Broncos after Peyton Manning was benched?",
+    "answer": "Brock Osweiler",
+    "model_answer": "Trevor Siemian and Brock Osweiler were the primary quarterbacks who played for the Denver Broncos after Peyton Manning was benched. However, it's important to note that both players had their time as a starter before Manning's benching. Manning retired after the 2015 season, and the starting QB role in the following seasons was filled by Osweiler (for part of the 2016 season) and Siemian (for most of the 2016 and 2017 seasons). Paxton Lynch and Case Keenum were also quarterbacks for the Broncos during this period, but they primarily served as backups."
+  },
+  {
+    "question": "Who leads the National and Public Library Servies?",
+    "answer": "the Kenya National Library Service",
+    "model_answer": "In the United States, the National and Public Library Services are overseen by the Institute of Museum and Library Services (IMLS), an independent federal agency that serves as a primary source of support for the nation's approximately 123,000 libraries and 35,000 museums. The IMLS is led by the Director, who reports to the U.S. Congress and the President. As of my last update, Crosby Kemper served as the Director of IMLS from October 2019 to January 2021, but a new director has not been appointed yet. However, it's always best to double-check the most recent information as these positions may have changed since then."
+  },
+  {
+    "question": "What is the law named that defines a charge moving through a magnetic field?",
+    "answer": "Lorentz's Law",
+    "model_answer": "The law you are referring to is known as Lorentz Force Law or Lorentz Force, which describes the relationship between the electric and magnetic forces acting on a charged particle. It states that the force (F) experienced by a charged particle moving with velocity (v) in an electromagnetic field is given by F = q(E + v x B), where q is the charge of the particle, E is the electric field, B is the magnetic field, and 'x' denotes the vector cross product."
+  },
+  {
+    "question": "When did Warsaw start to rebuild?",
+    "answer": "After liberation",
+    "model_answer": "The process of rebuilding Warsaw started immediately after the end of World War II, but the most significant phase began in 1948. After extensive destruction during the war, the city was almost entirely rebuilt according to pre-war designs or plans based on them. This massive reconstruction effort lasted until the early 1960s and is known as the Warsaw Rebuilding (Polish: Odbudowa Warszawy)."
+  },
+  {
+    "question": "What has the Court required to be more accessible?",
+    "answer": "higher education",
+    "model_answer": "1. Providing clear and concise language in all communication materials, including court forms, websites, and notices.\n2. Offering multiple modes of communication (phone, email, online chat) for the public to access the courts easily.\n3. Making physical facilities (courthouses) more accessible by providing ramps, wheelchair-accessible entrances, hearing loops for people with hearing impairments, and other accommodations.\n4. Offering interpretation services for non-English speakers and those who are deaf or hard of hearing.\n5. Providing access to assistive technology like screen readers, text-to-speech software, and sign language interpreters for people with disabilities.\n6. Ensuring the court process is transparent, fair, and understandable for everyone, regardless of their background or abilities.\n7. Implementing flexible scheduling options, such as evening hours, weekend appointments, and virtual hearings, to accommodate individuals with varying schedules.\n8. Providing plain-language guides and resources on the court process, legal terms, and rights so that people can better understand their cases and navigate the system.\n9. Offering educational programs and resources for people about the court system, such as free legal clinics or self-help centers in courthouses.\n10. Making all information and services available online to reduce the need for physical visits to the court, making it more convenient and accessible for those who may have transportation issues or live far from a courthouse."
+  },
+  {
+    "question": "In what year did Priestley publish the findings of his experiments?",
+    "answer": "1775",
+    "model_answer": "1767. Joseph Priestley published his findings on the discovery of oxygen in 1767. He performed his famous experiments on photosynthesis and respiration using a device called a \"mercury-box\". His research contributed significantly to our understanding of gases, particularly oxygen's role in combustion."
+  },
+  {
+    "question": "What did Paul Baran develop ",
+    "answer": "Paul Baran developed the concept Distributed Adaptive Message Block Switching",
+    "model_answer": "Paul Baran developed packet switching, a fundamental concept in digital data communication. He is often recognized as one of the founding fathers of the internet along with Donald Davies and Leonard Kleinrock. Packet switching allows data to be broken into smaller chunks (packets) which are then sent separately and reassembled at their destination. This method greatly improved the efficiency of long-distance communications and was key to the development of computer networks like ARPANET, which eventually evolved into the modern internet."
+  },
+  {
+    "question": "When was Japan accepted as an Arab-friendly state?",
+    "answer": "December 25",
+    "model_answer": "There is no such concept as \"Arab-friendly state\" in the way you've presented it. However, Japan and many Arab countries have maintained diplomatic relations since the late 19th century. Their relationship has grown and evolved over time, with Japan being recognized by most Arab nations as a sovereign state. It is important to note that the term \"Arab-friendly\" might imply a level of cultural or political affinity that doesn't necessarily exist between all countries in these regions, making it an imprecise term for historical context."
+  },
+  {
+    "question": "What is another word for cryptophytes?",
+    "answer": "cryptomonads",
+    "model_answer": "Cryptomonads or Cryptomicrobes can also refer to cryptophytes, which are a group of unicellular algae characterized by their unique, complex cell structure."
+  },
+  {
+    "question": "What does a Turing machine handle on a strip of tape?",
+    "answer": "symbols",
+    "model_answer": "A Turing machine handles symbols (often represented by digits or any kind of characters) that are placed on a strip of tape. The movement of the reading/writing head and the change of states in the machine allow it to perform computations based on these symbols."
+  },
+  {
+    "question": "What type of system did Tesla suggest to Adams?",
+    "answer": "two-phased system",
+    "model_answer": "The question seems to be a mix of historical figures and fictional elements. In reality, Nikola Tesla and Charles Francis Adams Jr., who were both from the late 19th and early 20th centuries, had no direct interactions that we know of regarding any specific system. It's possible you might be referring to a work of fiction where their characters have been combined or placed in a different context. Without more specific details, it is not possible for me to provide an accurate answer."
+  },
+  {
+    "question": "The development of Terra Preta allowed for what to happen in the Amazon Forest?",
+    "answer": "agriculture and silviculture",
+    "model_answer": "The development of Terra Preta (Dark Earth) by pre-Columbian indigenous populations significantly increased soil fertility and productivity, enabling permanent agriculture in the Amazon Rainforest. This was crucial as it allowed for the establishment and sustainability of human settlements in areas that were initially unsuitable for agriculture. The method involved mixing charcoal, bones, and other organic waste into the soil, creating a nutrient-rich and well-draining soil composition which supports a diverse range of crops. This was an important factor in the development and maintenance of Amazonian societies, as it allowed them to thrive without deforesting large areas for agriculture."
+  },
+  {
+    "question": "Roughly how many clubs are ran at the university?",
+    "answer": "over 400",
+    "model_answer": "To accurately answer this question, I would need specific details about the university in question. Generally, universities can have a wide range of student-led and official clubs, from sports teams to academic societies, cultural groups, and more. Some universities might have hundreds, while others may have thousands. Without knowing the particular university, it's not possible to provide an accurate estimate."
+  },
+  {
+    "question": "How many students does the University of Chicago have enlisted?",
+    "answer": "5,000",
+    "model_answer": "I'm sorry for any confusion, but it is not possible to provide the exact number of students currently enrolled at the University of Chicago without real-time data. The university has over 16,000 students enrolled in total across its undergraduate and graduate programs as of Fall 2021. To get the most accurate current figure, I would recommend visiting their official website or contacting the university directly."
+  },
+  {
+    "question": "What interpretation of Islam is, for many of the adherents, the \"gold standard\" of their religion?",
+    "answer": "Saudi",
+    "model_answer": "In Islamic terminology, there isn't a concept of a \"gold standard\" as it relates to interpretations of the religion. However, many Muslims aspire to follow the Sunnah (the practices and teachings of Prophet Muhammad) and the Quran according to their best understanding, guided by recognized Islamic scholars and traditional schools of thought, such as Hanafi, Shafi'i, Maliki, and Hanbali. These four schools form the basis of Sunni Islam.\n\nIn practice, people may lean more towards one particular school or adopt a more liberal or conservative approach to their religious beliefs and practices. The interpretation that is considered most authentic or authoritative can vary among different communities and individuals."
+  },
+  {
+    "question": "What have peridinin-type chloroplasts lost?",
+    "answer": "the red algal endosymbiont's original cell membrane",
+    "model_answer": "Peridinin-type chloroplasts, found in certain types of algae known as Peridinium, are unique because they have lost the ability to carry out photosynthesis independently. Instead, they rely on endosymbiotic dinoflagellates within their cells for photosynthesis. This means that peridinin-type chloroplasts no longer possess the essential photosynthetic organelles like thylakoids and pyrenoids found in other types of chloroplasts. However, they still retain some characteristics of chloroplasts, such as their double membrane structure."
+  },
+  {
+    "question": "What was redesigned to allow better maneuverability in the LRV?",
+    "answer": "Block II spacesuit",
+    "model_answer": "The Land Rover Vehicle (LRV) you're referring to might be the NASA's Lunar Roving Vehicle, as it's the most common application of the term. In the case of the LRV, the part that was significantly redesigned for better maneuverability were its wheels.\n\nThe wheels were made with a large diameter (1.42 meters) to accommodate the lunar terrain, and they were designed with six studded pneumatic tires for increased traction on the moon's rough surface. The wheel design provided superior mobility, allowing the rovers to travel at speeds up to 16 kilometers per hour (10 mph).\n\nThe design also included swivel castors that could rotate 360 degrees and steerable front wheels, giving the rover greater agility in navigating obstacles on the lunar surface."
+  },
+  {
+    "question": "Where does The Council meet?",
+    "answer": "various locations throughout the world",
+    "model_answer": "I don't have the specific context for The Council in your question. In general, The Council could refer to various organizations or entities that may hold meetings at different locations depending on their structure and purpose. For instance, The United Nations Security Council holds its meetings at the UN Headquarters in New York City, while a neighborhood council might meet in a local community center. If you're referring to a specific Council, it would be helpful if you could provide more context so I can give a more accurate answer."
+  },
+  {
+    "question": "Who were the defending Super Bowl champions?",
+    "answer": "New England Patriots",
+    "model_answer": "The defending Super Bowl champions as of my last update are the Tampa Bay Buccaneers, who won Super Bowl LV (55) in February 2021."
+  },
+  {
+    "question": "When was the first Sino-Japanese War?",
+    "answer": "1894",
+    "model_answer": "The first Sino-Japanese War took place from 1894 to 1895. The conflict primarily arose due to territorial disputes, particularly over Korea, and China's reluctance to recognize Japan as an equal power in East Asia. The war ended with the Treaty of Shimonoseki, which granted Taiwan, Penghu Islands, Liaodong Peninsula (returned later), and other territories to Japan."
+  },
+  {
+    "question": "Civil Disobedience is mainly performed by what population group?",
+    "answer": "private citizen",
+    "model_answer": "Civil disobedience can be practiced by individuals or groups from any population, regardless of their race, ethnicity, age, gender, or socio-economic status. However, it is often associated with social movements and activists who are advocating for change within a society, challenging unjust laws or oppressive systems. Examples include Mahatma Gandhi in India, Martin Luther King Jr. in the United States, and Nelson Mandela in South Africa. It's important to note that civil disobedience is a peaceful form of resistance and protest against injustice."
+  },
+  {
+    "question": "What are examples of clinical services that pharmacists can provide?",
+    "answer": "thorough analysis of all medication (prescription, non-prescription, and herbals) currently being taken by an individual",
+    "model_answer": "1. Medication Therapy Management (MTM): Pharmacists evaluate a patient's overall drug therapy and make recommendations to optimize their medications, improve health outcomes, and reduce potential side effects or drug interactions.\n\n2. Immunization Services: Pharmacists can administer immunizations such as flu shots, shingles vaccines, and Hepatitis B series to qualified patients.\n\n3. Chronic Disease Management: Pharmacists can provide counseling and management for chronic conditions like diabetes, hypertension, asthma, and heart disease. They can help monitor blood sugar levels, blood pressure, and other relevant parameters, adjust medication regimens as necessary, and educate patients about lifestyle modifications to manage their condition effectively.\n\n4. Anticoagulation Management: Pharmacists can oversee warfarin (blood thinner) therapy for patients at risk of blood clots, monitor the international normalized ratio (INR), and make dosage adjustments as needed.\n\n5. Smoking Cessation Counseling: Pharmacists can help smokers quit by providing education about the benefits of quitting, counseling on various cessation methods, and prescribing medications such as nicotine replacement therapy (NRT).\n\n6. Emergency Contraception: Some pharmacists can provide emergency contraception to women who have had unprotected sex or a contraceptive failure within the past 5 days, reducing the risk of an unwanted pregnancy.\n\n7. Travel Health Consultations: Pharmacists can offer advice on travel-related health risks and recommend vaccinations, medications, and precautions for safe travel.\n\n8. Point-of-care Testing: Pharmacists may perform simple diagnostic tests such as rapid strep throat testing or glucose screening, allowing patients to receive quick results and treatment recommendations.\n\n9. Medication Synchronization: Pharmacists can coordinate the refill dates of a patient's multiple medications to ensure that they pick up their prescriptions on the same day each month, reducing the need for frequent trips to the pharmacy.\n\n10. Nutrition and Weight Management: Pharmacists can provide guidance on healthy eating habits, meal planning, and weight loss strategies to help patients manage their weight and improve overall health."
+  },
+  {
+    "question": "Which of Genghis Khan's sons was disqualified from being successor because of his unstable behavior?",
+    "answer": "Chagatai",
+    "model_answer": "One of the most notable examples is Ögedei Khan, who succeeded Genghis Khan as Great Khan. Another son, Tolui, had two successful sons, Hulagu and Kublai Khan, who also became Great Khans. The son you're likely referring to, whose behavior led to his disqualification from becoming the Great Khan, is Jochi. He had a large number of descendants known as the Golden Horde, but they were not in direct line for the Great Khan title. However, it's important to note that the Mongol succession was complex and not always determined by behavior alone."
+  },
+  {
+    "question": "Who exclusively broadcast the game in Spanish after reaching an agreement with the NFL and CBS?",
+    "answer": "ESPN Deportes",
+    "model_answer": "The network that exclusively broadcasts the NFL games in Spanish is NBCUniversal's Telemundo. This was achieved through a multi-year agreement they reached with the NFL and CBS Sports."
+  },
+  {
+    "question": "The loss of biodiversity may be the result of what, according to environmentalists?",
+    "answer": "destruction of the forest",
+    "model_answer": "1. Habitat destruction (e.g., deforestation, urban development)\n2. Pollution (e.g., air and water pollution)\n3. Climate change (e.g., global warming, ocean acidification)\n4. Overexploitation of natural resources (e.g., overfishing, unsustainable logging)\n5. Invasive species (e.g., non-native plants or animals that outcompete native species)\n6. Disease and pathogens (e.g., infectious diseases that affect wildlife populations)\n7. Human population growth and consumption patterns (e.g., expanding agriculture, deforestation for agriculture).\n\nThese factors can lead to the extinction of species, loss of ecosystem services, and a less resilient planet overall. It is crucial to address these issues through conservation efforts, sustainable practices, and policy changes in order to preserve biodiversity for future generations."
+  },
+  {
+    "question": "What compounds can be masked with the molecules of the host cell in order for a virus to evade detection?",
+    "answer": "antigens",
+    "model_answer": "Viruses often use various strategies to evade detection by the host's immune system, and one common method is through antagonism or inhibition of the host's defense mechanisms. However, directly masking compounds with host cell molecules is not typically how viruses achieve this. Instead, they may carry on their surface proteins that resemble host cell proteins (to avoid recognition by immune cells), or they may synthesize enzymes that inhibit interferon production or degrade host defense factors. Examples include the hemagglutinin protein of Influenza A virus and the NS3/4A protease complex of Hepatitis C virus. These proteins are not exactly \"masked\" with host cell molecules, but they mimic them in order to avoid detection."
+  },
+  {
+    "question": "What do green chloroplasts have instead of phycobilisomes?",
+    "answer": "chlorophyll b",
+    "model_answer": "Chloroplasts in plants, algae, and some protists have thylakoids which contain photosystems I and II, not phycobilisomes. Phycobilisomes are found only in cyanobacteria and red algae (Rhodophyta), which lack chloroplasts."
+  }
+]

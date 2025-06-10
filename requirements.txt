@@ -4,16 +4,16 @@ tqdm
 pandas
 pyyaml
 textblob
+evaluate
+scikit-learn
+nltk
+spacy
+sentence-transformers
+bert-score
 
 # Modelos y procesamiento
 transformers>=4.36.0
 torch>=2.0.0
-openai
-
-# Servidor API
-fastapi
-uvicorn[standard]
-python-multipart
 
 # Variables de entorno
 python-dotenv
@@ -26,8 +26,9 @@ langchain-openai
 # Datasets
 datasets>=2.18.0
 
-# Notebooks y análisis
+# Notebooks y visualización (opcional)
 jupyter
+notebook
+ipykernel
 matplotlib
 seaborn
-notebook

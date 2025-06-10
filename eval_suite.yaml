@@ -1,3 +1,0 @@
-name: composite_eval
-metrics:
-  - evaluator.custom_metrics.composite_factuality
