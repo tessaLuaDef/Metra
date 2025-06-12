@@ -16,20 +16,17 @@ load_dotenv()
 # -- LLM Loader ---------------------------------------------------------------
 
 def load_llm(model_name: str):
-    # Returns a chat model instance based on the model name (Ollama-based)
     return ChatOllama(model=model_name)
 
 
 # -- Main Evaluation Function -------------------------------------------------
 
-def main(input_file: str, model_name: str, output_file: str):
+def run_evaluation(input_file: str, model_name: str, output_file: str):
     # Load dataset from JSON file
     dataset_hf = load_dataset("json", data_files=input_file)["train"]
     dataset = [dict(row) for row in dataset_hf]
 
-    # Load LLM for metrics that require it
     llm = load_llm(model_name)
-
     file_path = input_file.lower()
     folder_name = os.path.dirname(file_path)
     filename = os.path.basename(file_path)
@@ -76,8 +73,8 @@ def main(input_file: str, model_name: str, output_file: str):
         for i, result in enumerate(fairness_results):
             print(f"--- Entry {i + 1} ---")
             print(f"Fairness - Final score:      {result['final_score']:.2f}")
-            print(f"* LLM score:                 {result['llm_score']:.2f}")
-            print(f"* Sentiment score:           {result['sentiment_score']:.2f}")
+            print(f"LLM score:                 {result['llm_score']:.2f}")
+            print(f"Sentiment score:           {result['sentiment_score']:.2f}")
             print(f"Justification:               {result['justification']}\n")
             results.append(result)
 
@@ -91,8 +88,7 @@ def main(input_file: str, model_name: str, output_file: str):
     elif "accuracy" in folder_name or "accuracy" in filename:
         print("\nEvaluating accuracy with HybridAccuracyMetric...\n")
         evaluator = HybridAccuracyMetric()
-
-        results = evaluator.compute(dataset) 
+        results = evaluator.compute(dataset)
 
         for i, r in enumerate(results):
             print(f"--- Entry {i + 1} ---")
@@ -128,7 +124,6 @@ def main(input_file: str, model_name: str, output_file: str):
         print("\n--- Composite Factuality Results ---")
         print(f"Average Factuality Score:    {sum(r['score'] for r in results) / len(results):.2f}")
 
-
     # -- Save Output ----------------------------------------------------------
 
     if output_file:
@@ -141,13 +136,38 @@ def main(input_file: str, model_name: str, output_file: str):
         print(f"\nResultados guardados en: {output_file}")
 
 
-# -- CLI Entrypoint -----------------------------------------------------------
+# -- CLI wrapper for pyproject.toml ------------------------------------------
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", type=str, required=True, help="Path to the input .json file")
-    parser.add_argument("--model", type=str, default="gemma:2b", help="Model to evaluate (e.g. llama3, mistral)")
-    parser.add_argument("--output", type=str, help="Path to save the results as .json")
+    parser.add_argument("--metric", type=str, required=True, choices=["accuracy", "factuality", "ethics", "fairness"],
+                        help="Nombre de la métrica a evaluar")
+    parser.add_argument("--model", type=str, required=True,
+                        help="Modelo a evaluar (e.g., mistral, llama3)")
+    parser.add_argument("--output", type=str, required=False,
+                        help="Ruta para guardar los resultados (por defecto: results/{metric}_results_{model}.json)")
+
     args = parser.parse_args()
 
-    main(args.input, args.model, args.output)
+    # Construcción automática del input path
+    input_path = os.path.join(
+        "data",
+        f"{args.metric}_datasets",
+        f"{args.metric}_test_{args.model}.json"
+    )
+
+    print(f"\nUsando dataset: {input_path}")
+
+    if not os.path.exists(input_path):
+        raise FileNotFoundError(f"Dataset no encontrado: {input_path}")
+
+    output_path = args.output or os.path.join(
+        "results",
+        f"{args.metric}_results_{args.model}.json"
+    )
+
+    run_evaluation(input_path, args.model, output_path)
+
+
+if __name__ == "__main__":
+    main()

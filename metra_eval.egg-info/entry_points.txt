@@ -1,0 +1,2 @@
+[console_scripts]
+metra = evaluator.main:main

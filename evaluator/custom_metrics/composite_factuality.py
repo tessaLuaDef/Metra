@@ -109,7 +109,7 @@ Answer: {answer}
 class CompositeFactuality:
     # Combines the two previous metrics into a single factuality score
 
-    def __init__(self, alpha=0.5, beta=0.5):
+    def __init__(self, alpha=0.4, beta=0.6):
         self.alpha = alpha
         self.beta = beta
         self.triple_metric = FactTripleCoverage()

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+evaluator/main.py
+metra_eval.egg-info/PKG-INFO
+metra_eval.egg-info/SOURCES.txt
+metra_eval.egg-info/dependency_links.txt
+metra_eval.egg-info/entry_points.txt
+metra_eval.egg-info/requires.txt
+metra_eval.egg-info/top_level.txt

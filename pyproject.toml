@@ -1,0 +1,50 @@
+[project]
+name = "metra-eval"
+version = "0.1.0"
+description = "Framework para evaluar modelos LLM con métricas personalizadas de precisión, factualidad, ética y equidad."
+authors = [
+  { name="Tessa Luaces De Fazio" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+  "ragas",
+  "tqdm",
+  "pandas",
+  "pyyaml",
+  "textblob",
+  "evaluate",
+  "scikit-learn",
+  "nltk",
+  "spacy",
+  "sentence-transformers",
+  "bert-score",
+  "transformers>=4.36.0",
+  "torch>=2.0.0",
+  "python-dotenv",
+  "langchain-core",
+  "langchain-community",
+  "langchain-openai",
+  "datasets>=2.18.0",
+  "click"
+]
+
+[project.optional-dependencies]
+notebooks = [
+  "jupyter",
+  "notebook",
+  "ipykernel",
+  "matplotlib",
+  "seaborn"
+]
+
+[project.scripts]
+metra = "evaluator.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["evaluator"]
