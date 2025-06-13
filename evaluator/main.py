@@ -15,8 +15,8 @@ load_dotenv()
 
 # -- LLM Loader ---------------------------------------------------------------
 
-def load_llm(model_name: str):
-    return ChatOllama(model=model_name)
+def load_llm(model_name: str, temperature: float = 0.0):
+    return ChatOllama(model=model_name, temperature=temperature)
 
 
 # -- Main Evaluation Function -------------------------------------------------
@@ -26,7 +26,7 @@ def run_evaluation(input_file: str, model_name: str, output_file: str):
     dataset_hf = load_dataset("json", data_files=input_file)["train"]
     dataset = [dict(row) for row in dataset_hf]
 
-    llm = load_llm(model_name)
+    llm = load_llm(model_name, temperature=0.7) 
     file_path = input_file.lower()
     folder_name = os.path.dirname(file_path)
     filename = os.path.basename(file_path)
@@ -133,7 +133,7 @@ def run_evaluation(input_file: str, model_name: str, output_file: str):
 
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
-        print(f"\nResultados guardados en: {output_file}")
+        print(f"\nResults stored in: {output_file}")
 
 
 # -- CLI wrapper for pyproject.toml ------------------------------------------
@@ -141,25 +141,25 @@ def run_evaluation(input_file: str, model_name: str, output_file: str):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--metric", type=str, required=True, choices=["accuracy", "factuality", "ethics", "fairness"],
-                        help="Nombre de la métrica a evaluar")
+                        help="Name of the metric to be evaluated")
     parser.add_argument("--model", type=str, required=True,
-                        help="Modelo a evaluar (e.g., mistral, llama3)")
+                        help="Model to be evaluated (e.g., mistral, llama3)")
     parser.add_argument("--output", type=str, required=False,
-                        help="Ruta para guardar los resultados (por defecto: results/{metric}_results_{model}.json)")
+                        help="Path to save the results (by default: results/{metric}_results_{model}.json)")
 
     args = parser.parse_args()
 
-    # Construcción automática del input path
+    
     input_path = os.path.join(
         "data",
         f"{args.metric}_datasets",
         f"{args.metric}_test_{args.model}.json"
     )
 
-    print(f"\nUsando dataset: {input_path}")
+    print(f"\nUsing dataset: {input_path}")
 
     if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Dataset no encontrado: {input_path}")
+        raise FileNotFoundError(f"Dataset not found: {input_path}")
 
     output_path = args.output or os.path.join(
         "results",

@@ -4,202 +4,202 @@
     "model_answer": "A black body, in astronomy, is an idealized theoretical object that absorbs all incident electromagnetic radiation, regardless of its frequency or wavelength, and re-emits it as thermal radiation at its own characteristic temperature. This concept is crucial for accurately calculating the radiation emitted by stars.",
     "context": "A black body is a theoretical object that absorbs all incident electromagnetic radiation, regardless of its frequency or wavelength. This means that any light falling on a true black body will be completely absorbed and re-emitted as thermal radiation at its own characteristic temperature, known as its \"blackbody radiation.\" In astronomy, the concept of black bodies is crucial for accurately calculating the radiation emitted by stars, as the spectrum of this radiation provides valuable information about the star's temperature, size, and chemical composition. By studying the blackbody radiation from celestial objects, astronomers can learn about their physical properties and gain insights into the fundamental nature of matter and energy in the universe.",
     "score": 1.0,
-    "justification": "The answer correctly and completely reflects the information provided in the context about the definition, properties, and importance of a black body in astronomy."
+    "justification": "The answer accurately and completely reflects the information provided in the context about the definition and significance of a black body, particularly within astronomy, including the absorption and emission properties, as well as its role in calculating the radiation from stars."
   },
   {
     "question": "The International Space Station (ISS) circles the Earth approximately 410 km above the ground. Find the best estimate for the orbital speed of the ISS:",
     "model_answer": "27,622 kilometers per hour (or about 17,182 miles per hour)",
     "context": "The International Space Station (ISS) orbits Earth at an average altitude of approximately 410 kilometers, which is well above the thickness of the atmosphere. Due to Earth's gravity and the conservation of angular momentum, the ISS follows a slightly elliptical orbit around our planet. To maintain this position in space, the station must travel at a significant speed. The exact orbital velocity required depends on several factors, including the location of the station in its orbit and the gravitational influence of nearby celestial bodies. Estimates suggest that the ISS completes an orbit around Earth in approximately 90 minutes, with a calculated mean velocity of approximately 27,622 kilometers per hour (17,182 miles per hour) at an inclination of about 51.6° to the equator.",
-    "score": 0.5,
-    "justification": "The answer is explicitly stated in the context with the exact numerical value provided for the mean velocity of the ISS."
+    "score": 0.6,
+    "justification": "The answer provided, \"27,622 kilometers per hour (or about 17,182 miles per hour)\", is explicitly stated in the context of the given information about the ISS's mean velocity."
   },
   {
     "question": "What drives differentiation?",
     "model_answer": "Differentiation is driven by factors such as consumer needs and preferences, technological advancements, regulatory frameworks, competitive pressures, and evolving trends and market dynamics.",
     "context": "Differentiation in products or services is driven by several factors. Firstly, consumer needs and preferences play a significant role as businesses identify gaps in the market that are not being met by existing offerings. Secondly, technological advancements provide new opportunities for innovation and differentiation. Thirdly, regulatory frameworks can impact differentiation as companies must adhere to certain standards or requirements in their respective industries. Fourthly, competitive pressures can push companies to innovate and differentiate themselves from competitors in their markets. Lastly, evolving trends and market dynamics also contribute to driving differentiation as businesses adapt to changing customer demands and new industry realities.",
-    "score": 0.5,
-    "justification": "The answer accurately reflects all the factors mentioned in the context that drive differentiation in products or services."
+    "score": 0.6,
+    "justification": "The entire answer provided is explicitly stated in the context given."
   },
   {
     "question": "How have we been able to construct detailed maps of surface features on Venus?",
     "model_answer": "We have constructed detailed maps of the surface features on Venus using data collected by radar imaging systems aboard orbiters and probes, such as NASA's Magellan mission, ESA and Roscosmos' Venus Express, and Japan's Akatsuki. The instruments on these missions collect data at various wavelengths and resolutions, which are then used to create maps of the planet's surface.",
     "context": "Venus, often referred to as Earth's \"evil twin,\" is a fascinating yet enigmatic planet. Due to its thick cloud cover and intense greenhouse effect, it has remained one of the most challenging planets to study from Earth. However, since the late 1980s, a series of space missions have helped scientists construct detailed maps of Venus' surface features. These maps are created using data collected by radar imaging systems aboard orbiters and probes that were sent to Venus by NASA, Russia's Roscosmos State Corporation for Space Activities (Roscosmos), and the European Space Agency (ESA). The data gathered by these instruments allows scientists to map Venus' surface at various wavelengths and resolutions. Some of the most significant missions that have contributed to our knowledge of Venus include NASA's Magellan, Venus Express (a joint mission between ESA and Roscosmos), and Akatsuki (Japan's Venus Climate Orbiter) mission. These missions have uncovered a wealth of information about Venus' geology, tectonics, volcanism, atmospheric dynamics, and potential habitability. However, due to the extreme conditions on Venus, many of these features remain largely unknown or unexplored. The data gathered by these missions continues to fuel scientific discoveries and inspire new missions to explore this enigmatic planet further.",
     "score": 1.0,
-    "justification": "The answer is completely supported by the context as it accurately describes how the detailed maps of Venus' surface features are constructed using data collected by radar imaging systems aboard orbiters and probes, specifically naming NASA's Magellan mission, ESA and Roscosmos' Venus Express, and Japan's Akatsuki. The context also mentions that these missions collect data at various wavelengths and resolutions to create maps of the planet's surface."
+    "justification": "The entire answer is explicitly stated in the context provided. The text explains that detailed maps of Venus' surface have been constructed using data from various radar imaging systems aboard orbiters and probes, including NASA's Magellan, ESA and Roscosmos' Venus Express, and Japan's Akatsuki. Additionally, it is mentioned that the instruments on these missions collect data at different wavelengths and resolutions to create maps of the planet's surface."
   },
   {
     "question": "Which property of our solar system does a formation theory NOT need to explain?",
     "model_answer": "A formation theory does NOT need to explain the gravitational force between the planets in our solar system, as it is a result of their existing configurations and not a requirement for forming a solar system like ours.",
     "context": "The gravitational force between the planets in our solar system is well-established and has been extensively studied for centuries. Therefore, any formation theory that explains the current positions and orbits of the planets around the sun would not need to account for this fundamental property of our solar system. The gravitational interactions between the planets are a result of their existing configurations and are not a requirement for forming a solar system like ours.",
-    "score": 0.5,
-    "justification": "The answer accurately summarizes and affirms the statement made in the context with no additional information or misinformation included."
+    "score": 0.6,
+    "justification": "The statement in the answer directly echoes the information provided in the context, including the assertion that a formation theory does not need to explain gravitational force between planets because it is a result of their existing configurations and not a requirement for forming a solar system like ours."
   },
   {
     "question": "If the Moon is setting at noon the phase of the Moon must be",
     "model_answer": "The Moon setting at noon would mean it's a morning crescent.",
     "context": "The Moon's phases are determined by its position relative to the Earth and the Sun. During a lunar month, which lasts approximately 29.5 days, the Moon undergoes a series of phases, including new moon, waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, last quarter, and waning crescent. At new moon, the Moon is completely obscured by Earth as it passes between us and the Sun. As the Moon moves around in its orbit, it becomes more illuminated until it reaches first quarter, when it appears to be exactly half-lit. It then continues to grow brighter until it is full, which typically occurs around 14 days after new moon. After reaching full moon, the Moon begins to wane, or decrease in size, as it moves toward last quarter and eventually disappears completely once again at new moon. However, if the Moon were setting at noon, it would mean that the phase of the Moon would be a morning crescent, which is when only a sliver of the Moon's disk can be seen on the pre-dawn horizon before it sets.",
-    "score": 0.5,
-    "justification": "The context explicitly states that if the Moon were setting at noon, it would mean that the phase of the Moon would be a morning crescent. This information is directly presented in the text and is fully supported by the context provided."
+    "score": 0.15,
+    "justification": "While the context does mention that the phase of the Moon changes as it moves around in its orbit and provides information about some phases, it does not explicitly state that if the Moon sets at noon, it would be a morning crescent. This information is an implication derived from understanding the cycle of Moon phases."
   },
   {
     "question": "Why doesn't Venus have seasons like Mars and Earth do?",
     "model_answer": "Venus does not have seasons like Mars and Earth because its axis of rotation is almost perpendicular to its orbit around the sun, with a negligible tilt of less than three degrees. This results in both poles receiving nearly equal amounts of sunlight throughout the year, causing no significant difference in solar radiation received by each hemisphere, and thus, no discernible seasonal variation.",
     "context": "Venus is often referred to as the \"Earth-like\" planet due to its similar size and composition. However, while both Venus and Earth orbit around the sun, there are some crucial differences between the two planets that result in Venus not having seasons like Mars and Earth do. The main reason for this is the significant difference in the tilt of their axes. While Earth's axis is tilted approximately 23 degrees from the vertical, which causes seasonal variations due to the changing position of the planet in relation to the sun, Venus' axis is almost perpendicular to its orbit around the sun, with a negligible tilt of less than three degrees. This means that both poles of Venus receive nearly equal amounts of sunlight throughout the year, resulting in no significant difference between the amount of solar radiation received by each hemisphere, and thus, no discernible seasonal variation.",
-    "score": 0.5,
-    "justification": "The entire answer is explicitly stated in the context provided. The text clearly explains that Venus does not have seasons due to its small tilt (less than three degrees) compared to Earth's tilt (approximately 23 degrees), which causes seasonal variations. Additionally, it explains how this negligible tilt results in both poles receiving nearly equal amounts of sunlight throughout the year, leading to no discernible seasonal variation."
+    "score": 0.6,
+    "justification": "The entire answer is explicitly stated in the context provided."
   },
   {
     "question": "How did the lunar maria form?",
     "model_answer": "The Lunar Maria formed around 3 billion years ago during a period called the Nectarian era, due to large volcanic eruptions on the near side of the Moon that spewed vast amounts of basaltic lava onto the surface and filled in low-lying areas.",
     "context": "The lunar maria, also known as \"seas of moon,\" are large, dark, and smooth areas on the Moon's surface that cover approximately 30% of its visible face. These features were first observed by Galileo Galilei in 1609 and were initially mistaken for actual seas or oceans due to their similar appearance from Earth. The lunar maria formed around 3 billion years ago during a period called the Nectarian era, which followed the Imbrian era that had shaped most of the Moon's surface. During this time, large volcanic eruptions occurred on the near side of the Moon, spewing vast amounts of lava onto the surface and filling in low-lying areas to create the maria. The basaltic lava flows that formed the maria were among the largest known volcanic events in the Solar System, with some covering over 100,000 square miles (260,000 square kilometers). Scientists believe that these eruptions may have lasted for millions of years and could provide insights into the Moon's geologic history and potential habitability.",
-    "score": 0.5,
-    "justification": "The entire answer is explicitly stated in the context provided."
+    "score": 0.6,
+    "justification": "The answer is exactly as stated in the context, providing a detailed and accurate description of how the Lunar Maria formed during the Nectarian era due to large volcanic eruptions on the Moon's near side."
   },
   {
     "question": "A comet’s tail points in the following direction:",
     "model_answer": "A comet's tail points away from the sun, in the antisolar or retrograde direction. This indicates that the comet is currently moving towards the outer regions of our solar system.",
     "context": "Comets are celestial bodies that originate from beyond our solar system and make occasional appearances in our sky. They are characterized by their distinct features such as a small, solid nucleus surrounded by a hazy atmosphere called the coma and a long, curved tail called the comet's tail or coma tail. The direction of a comet's tail is not random but rather follows a specific path. This is due to the fact that a comet's tail is made up of ionized gas particles known as plasma, which are expelled from the comet as it approaches the sun. These particles interact with the sun's magnetic field and solar wind, causing them to be pushed away from the sun in a direction opposite to the sun's position. This results in the tail appearing to point away from the sun, known as the antisolar or retrograde direction. So, if you were to observe a comet's tail pointing in a specific direction, it would indicate that the comet is currently moving in the opposite direction, toward the outer regions of our solar system.",
-    "score": 0.5,
-    "justification": "The answer is an accurate summary of the information provided in the context and correctly explains the relationship between a comet's tail direction, its current movement, and its position within our solar system."
+    "score": 0.6,
+    "justification": "The given answer is a precise and accurate summary of the information presented in the context regarding the direction and movement of comets."
   },
   {
     "question": "Which mechanism can NOT explain Mercury's lack of a permanent atmosphere?",
     "model_answer": "The proximity of Mercury to the Sun cannot explain its lack of a permanent atmosphere.",
     "context": "Mercury's proximity to the Sun is the most significant factor that cannot explain its lack of a permanent atmosphere. While other mechanisms such as escape of gas molecules due to weak gravitational pull, chemical reactions with the surface and solar wind can contribute to atmospheric loss on Mercury, the intense solar radiation and high temperatures on the planet's surface prevent the formation and retention of an atmosphere in the first place. In contrast, similar mechanisms have allowed other rocky planets like Earth and Mars to maintain a thicker atmosphere.",
     "score": 1.0,
-    "justification": "The given answer is explicitly stated in the context, as evidenced by the passage saying \"Mercury's proximity to the Sun is the most significant factor that cannot explain its lack of a permanent atmosphere.\""
+    "justification": "The provided answer directly states that Mercury's proximity to the Sun cannot explain its lack of a permanent atmosphere, which is explicitly mentioned in the context as one of the factors that contribute to atmospheric loss but do not provide an explanation for the lack of a permanent atmosphere on Mercury."
   },
   {
     "question": "In 1948 how many Americans believed the Kinsey Report on Sexuality in the Male to be a bad thing?",
     "model_answer": "In 1948, approximately one-third (32%) of Americans believed the Kinsey Report on Sexuality in the Male to be a bad thing.",
     "context": "The Kinsey Report on Sexuality in the Male, published by Alfred Kinsey and his research team at Indiana University in 1948, generated significant controversy and debate among Americans. While the report presented groundbreaking data on male sexual behavior based on extensive interviews with over 5,000 men, many conservatives saw it as a threat to traditional values and morality. A Gallup poll conducted in 1949 found that approximately one-third (32%) of Americans believed that the Kinsey Report was a bad thing, while 60% approved of it. The controversy continued for years, with some religious leaders condemning the report as immoral and calling for its suppression. Despite the opposition, however, the Kinsey Reports remain significant contributions to the scientific study of human sexual behavior.",
-    "score": 0.875,
-    "justification": "While the exact percentage (32%) is explicitly stated in the context, it was derived from a Gallup poll conducted after the publication of the report. The rest of the answer, \"In 1948,\" is also found in the context."
+    "score": 0.85,
+    "justification": "While the exact percentage (32%) is explicitly stated in the context, the specific reference to \"one-third\" is also implicitly given through the description of the report as something that \"approximately one-third\" of Americans believed was a bad thing."
   },
   {
     "question": "Controlling for inflation and PPP-adjustment, about how much did GDP per capita increase from 1950 to 2016 in India?",
     "model_answer": "The GDP per capita increased from approximately USD $246 in 1950 to USD $1,937 in 2016 (adjusted for inflation and purchasing power parity).",
     "context": "From 1950 to 2016, India's GDP per capita underwent a significant transformation. After gaining independence from British rule in 1947, India's economy faced numerous challenges, including poverty, hunger, and high levels of inequality. However, the country embarked on a series of economic reforms starting in the late 1980s, which led to a gradual improvement in its economic performance. According to data adjusted for inflation and purchasing power parity (PPP), India's GDP per capita increased from approximately USD $246 in 1950 to USD $1,937 in 2016. This represents an impressive compound annual growth rate of around 1.8%, which is higher than the global average during this period. The rapid expansion of India's service sector and IT industry, as well as its growing population, have been key drivers of this economic progress. While India still faces significant development challenges, such as unemployment, poor infrastructure, and weak institutions, these numbers suggest that the country has made notable strides in improving its citizens' standard of living over the past seven decades.",
-    "score": 0.5,
-    "justification": "The entire answer is explicitly stated in the context provided."
+    "score": 0.6,
+    "justification": "The given answer is explicitly stated in the context provided. The numerical values of India's GDP per capita in 1950 ($246) and 2016 ($1,937) are both mentioned in the text, along with the fact that the figures are adjusted for inflation and purchasing power parity (PPP)."
   },
   {
     "question": "Most Latin American countries achieved independence",
     "model_answer": "By the mid-19th century, most Latin American countries had achieved independence.",
     "context": "During the late 18th and early 19th centuries, many of the territories that now make up Latin America were part of larger empires. Spain, Portugal, and Britain all controlled significant portions of the region for centuries. However, in the early 19th century, a wave of nationalistic sentiment swept through these territories, leading to a series of successful rebellions against colonial rule. Mexico became the first nation to declare independence from Spain in 1821, followed closely by several other countries, including Argentina, Chile, Colombia, Peru, and Brazil. The process of achieving independence was often violent and tumultuous, with many battles fought and treaties signed over the course of several decades. Nevertheless, by the mid-19th century, most Latin American countries had achieved sovereignty, ushering in a new era of political and economic development for the region.",
     "score": 1.0,
-    "justification": "The context explicitly states that by the mid-19th century, most Latin American countries had achieved independence."
+    "justification": "The context explicitly states that \"by the mid-19th century, most Latin American countries had achieved sovereignty,\" which directly supports the answer that \"By the mid-19th century, most Latin American countries had achieved independence.\""
   },
   {
     "question": "There are two billion children in the world today (2020), aged 0 to 15 years old. How many children will there be in the year 2100 according to the United Nations?",
     "model_answer": "1.9 billion children, according to UN projections for the year 2100.",
     "context": "According to projections by the United Nations, the number of children in the world is expected to decline in the coming decades. As of 2020, there are approximately two billion children between the ages of 0 and 15 years old worldwide. However, due to factors such as declining fertility rates and aging populations, it is projected that by the year 2100, there will be around 1.9 billion children under the age of 15 (United Nations Population Division, 2019). This is a decrease from the current number, highlighting demographic shifts in global population patterns.",
-    "score": 0.5,
-    "justification": "The exact number of children expected by the year 2100 (1.9 billion) is explicitly stated in the context."
+    "score": 0.6,
+    "justification": "The provided answer directly and explicitly quotes the projection made by the United Nations regarding the number of children in the world by the year 2100. This information is clearly presented in the context given."
   },
   {
     "question": "Total global healthcare expenditure is about what percentage of global GDP as of 2017?",
     "model_answer": "10% (as of 2017)",
     "context": "As of 2017, total global healthcare expenditure accounts for approximately 10% of the world's gross domestic product (GDP), according to data from the Organisation for Economic Co-operation and Development (OECD). This percentage varies significantly between different countries, with some high-income nations spending upwards of 20% of their GDP on healthcare. Factors contributing to these variations include population demographics, healthcare systems, levels of technological advancement, and prevalence of chronic diseases.",
-    "score": 0.5,
-    "justification": "The answer is explicitly stated in the context as \"As of 2017, total global healthcare expenditure accounts for approximately 10% of the world's gross domestic product (GDP)\". This means that the information given completely supports the provided answer."
+    "score": 0.6,
+    "justification": "The answer is explicitly stated in the context with the exact percentage as given by the OECD for global healthcare expenditure as of 2017."
   },
   {
     "question": "As of 2020, about what percentage of the population in Sub-Saharan Africa, is living on less than $1.90?",
     "model_answer": "42%",
     "context": "According to recent data from the World Bank's Poverty and Equality Database, as of 2020, approximately 42% of the population in Sub-Saharan Africa is living on less than $1.90 per day. This figure highlights the significant poverty levels that continue to persist in this region, despite efforts to reduce poverty through various development initiatives and policies. The impact of poverty on people's lives in Sub-Saharan Africa is multidimensional, with effects on health, education, and economic opportunities, among others. Consequently, addressing poverty in the region remains a pressing development challenge for governments, aid agencies, and other stakeholders.",
-    "score": 0.5,
-    "justification": "The answer provided (42%) exactly matches the percentage of the population living below $1.90 per day in Sub-Saharan Africa as stated in the context."
+    "score": 0.6,
+    "justification": "The answer (42%) is explicitly stated in the context as the percentage of the population in Sub-Saharan Africa living on less than $1.90 per day."
   },
   {
     "question": "Which of the following is true about the global growth rate?",
     "model_answer": "The global growth rate was 3.6% in 2019, according to the International Monetary Fund (IMF), but it is expected to decline to 3.3% in both 2020 and 2021 due to the economic fallout from the COVID-19 pandemic.",
     "context": "The global growth rate refers to the annual percentage change in gross domestic product (GDP) for the world as a whole. In recent years, the global growth rate has been moderating due to factors such as aging populations, slower productivity gains, and trade tensions. According to the International Monetary Fund (IMF), the global growth rate was 3.6% in 2019 but is expected to decline to 3.3% in both 2020 and 2021 due to the economic fallout from the COVID-19 pandemic. However, some economists argue that structural reforms and investment in areas such as technology and infrastructure could help boost global growth in the long run.",
     "score": 1.0,
-    "justification": "The provided answer fully reflects the information explicitly stated in the context. It accurately quotes the global growth rate for 2019, as well as the expected decline for both 2020 and 2021 due to the COVID-19 pandemic, which are all pieces of information found in the given context."
+    "justification": "The provided answer accurately states that the global growth rate was 3.6% in 2019, which is explicitly mentioned in the context, and also correctly quotes the expected decline in 2020 and 2021 due to the COVID-19 pandemic, which is also stated in the context."
   },
   {
     "question": "In which of the following country did the largest number of children die under the age of five years in 2017?",
     "model_answer": "Nigeria",
     "context": "According to recent statistics from the World Health Organization (WHO), in 2017, the highest number of child deaths under the age of five occurred in Nigeria. In fact, an estimated 672,000 children under the age of five died in Nigeria that year, which accounts for approximately 11% of global under-five mortality. This high child mortality rate can be attributed to a variety of factors, including insufficient access to healthcare services, poor nutrition, and high prevalence of infectious diseases such as malaria and diarrheal diseases. Despite ongoing efforts to improve health outcomes for children in Nigeria through initiatives like the National Primary Health Care Revitalization Programme, there is still much work to be done to reduce the number of preventable child deaths in this country.",
-    "score": 0.5,
-    "justification": "The answer \"Nigeria\" is explicitly stated in the context as the country where the highest number of child deaths under the age of five occurred in 2017, as confirmed by the World Health Organization (WHO)."
+    "score": 0.6,
+    "justification": "The answer \"Nigeria\" is explicitly stated in the context as the location where the highest number of child deaths under the age of five occurred in 2017."
   },
   {
     "question": "After the Atom bomb how many Americans support giving aid to Japan even at the cost of food shortages?",
     "model_answer": "41% of Americans supported providing economic assistance to Japan, even if it meant food shortages for American citizens, according to a Gallup poll conducted just three months after the bombings.",
     "context": "Following the atomic bombings in Hiroshima and Nagasaki during World War II, the United States and Japan were left to grapple with the aftermath. The immediate consequences of the bombs resulted in significant loss of life, destruction of infrastructure, and widespread displacement. In the wake of these events, many Americans began to question whether it was appropriate to provide aid to Japan given the country's role as a former enemy during the war.\n\nA poll conducted by Gallup just three months after the bombings found that only 41% of Americans supported providing economic assistance to Japan, even if it meant food shortages for American citizens. This figure was significantly lower than the 85% who supported aid to Western Europe and 69% who favored assistance to Greece following their civil war.\n\nThe decision to provide or withhold aid from Japan was a contentious issue in American politics at the time, with some arguing that the country's defeat had been secured by the bombs and that it would be unfair to burden American taxpayers with further costs. Others, however, believed that providing economic assistance was necessary for the long-term stability of the region and as a symbol of goodwill towards Japan. Ultimately, President Harry S. Truman did sign the Mutual Defense Assistance Act in 1949, which provided $2 billion in military aid to several countries, including Japan. However, economic assistance to Japan would not become significant until after the signing of the San Francisco Peace Treaty in 1951.",
-    "score": 0.375,
-    "justification": "The answer accurately states that 41% of Americans supported providing economic assistance to Japan, but it does not explicitly mention that this figure is from a Gallup poll conducted just three months after the bombings, which was detailed in the context."
+    "score": 0.6,
+    "justification": "The answer directly quotes the percentage of Americans who supported providing economic aid to Japan, which is explicitly stated in the context."
   },
   {
     "question": "How do city planners separate discordant land uses such as housing and sewage plants?",
     "model_answer": "City planners separate discordant land uses such as housing and sewage plants through zoning laws, by designating certain areas within a city for specific land uses. They also carefully site sewage treatment plants in locations that minimize potential negative impacts on nearby residents based on factors like proximity to bodies of water, availability of transportation and utility infrastructure, and potential environmental concerns. Additionally, advanced engineering and odor control technologies are used at these plants to help mitigate any remaining impacts on surrounding communities.",
     "context": "City planners use a variety of methods to separate discordant land uses such as housing and sewage plants in order to maintain the health, safety, and quality of life for residents. One approach is to designate certain areas within a city for specific land uses through zoning laws. This ensures that residential neighborhoods are not located too close to industrial or commercial facilities that may generate noise, odor, or other undesirable impacts. Another strategy is to carefully site sewage treatment plants in locations that minimize the potential for negative impacts on nearby residents. These sites are typically chosen based on factors such as proximity to bodies of water, availability of transportation and utility infrastructure, and potential environmental concerns. In addition, advanced engineering and odor control technologies can be employed at sewage treatment plants to help mitigate any remaining impacts on surrounding communities. By employing these strategies, city planners can promote a more livable and sustainable urban environment for all residents.",
     "score": 1.0,
-    "justification": "The entire answer is explicitly stated in the context, with additional details about the factors considered when siting sewage treatment plants and the use of advanced engineering and odor control technologies."
+    "justification": "The answer accurately and completely summarizes the strategies used by city planners to separate discordant land uses as described in the context, including zoning laws, careful site selection for sewage treatment plants, and the use of advanced engineering and odor control technologies. All essential aspects are covered without adding any new or unsupported information."
   },
   {
     "question": "College students who live in dormitories near the college cafeteria are more likely to eat in the cafeteria. This is an example of",
     "model_answer": "The phenomenon described is an example of the Proximity Effect.",
     "context": "A phenomenon commonly referred to as the \"proximity effect\" in the field of environmental psychology. It suggests that individuals tend to engage in behaviors more frequently when given easy access to them, and less frequently when they require effort or time investment. In this instance, college students residing in dormitories close to the campus cafeteria are more prone to dine at the facility due to its convenient location, as opposed to seeking out alternative dining options farther away from their residences. This finding highlights the importance of spatial arrangement and accessibility in shaping human behavior patterns.",
-    "score": 0.5,
-    "justification": "The context explicitly states that the phenomenon described is referred to as the \"proximity effect\" in environmental psychology, and it describes instances where individuals engage in behaviors more frequently when given easy access to them due to their convenient location (dining at a cafeteria close to their residence), which aligns with the definition of the proximity effect. Therefore, the answer accurately reflects the information provided in the context."
+    "score": 0.6,
+    "justification": "The given answer (\"The phenomenon described is an example of the Proximity Effect.\") accurately summarizes the explicit point made in the context, which directly explains that the college students' dining behavior patterns are influenced by the proximity effect (easier access leading to more frequent engagement)."
   },
   {
     "question": "State-sponsored terrorism has occurred recently in which of the following countries?",
     "model_answer": "Syria and North Korea",
     "context": "In recent years, there have been instances of state-sponsored terrorism reported in a few countries around the world. One such country is Syria, where the government, under the leadership of President Bashar al-Assad, has been accused by various international organizations and governments of supporting terrorist groups operating in neighboring Iraq and Lebanon as a part of its strategy to destabilize these countries. The Syrian government's alleged support for these groups has led to multiple instances of cross-border attacks, including suicide bombings targeting civilians, which have resulted in numerous casualties. Another country that has been accused of state-sponsored terrorism is North Korea, where the Kim Jong-un regime has been implicated in a number of high-profile assassinations and cyber-attacks against its perceived enemies, including South Korean officials, Japanese nationals, and international organizations. These attacks have resulted in multiple deaths and significant damage to infrastructure and institutions, leading to international condemnation and economic sanctions. Both Syria and North Korea continue to deny any involvement in such incidents, but the evidence presented by various sources suggests otherwise, leaving the international community grappling with the growing threat of state-sponsored terrorism.",
-    "score": 0.5,
-    "justification": "The answer provided (\"Syria and North Korea\") is explicitly stated in the context as two countries accused of state-sponsored terrorism, making it a direct and complete match with the information given."
+    "score": 0.6,
+    "justification": "The answer provided (Syria and North Korea) is explicitly stated in the given context."
   },
   {
     "question": "Due to a decrease in population, the city of Detroit, Michigan, has proposed to shrink its physical size by bulldozing abandoned neighborhoods and selling the vacant land to farmers. The cause of Detroit's shrinking population can be attributed to",
     "model_answer": "Detroit's shrinking population can be attributed to long-standing economic and social challenges, such as high unemployment rates, low levels of education hindering job creation, disinvestment in infrastructure, and a spike in violent crime. These factors have discouraged residents from staying and attracted new residents less, leading to population loss since the 1950s.",
     "context": "A number of factors have contributed to the decline in population in Detroit, Michigan, leading the city to propose a unique solution: shrinking its physical size by bulldozing abandoned neighborhoods and selling vacant land to farmers. This population loss can be attributed to several long-standing economic and social challenges. The city's economy has been struggling for decades, with high unemployment rates and low levels of education hindering job creation and attracting new residents. Additionally, Detroit has faced significant disinvestment in its infrastructure, as well as a spike in violent crime that has deterred some from living there. As a result, many residents have chosen to leave the city in search of better opportunities elsewhere, leading to a population loss of over 60% since its peak in the 1950s.",
-    "score": 0.5,
-    "justification": "The answer accurately identifies and explains all the factors that contribute to Detroit's shrinking population as explicitly stated in the context, with a clear connection between these factors and the resulting population loss since the 1950s."
+    "score": 0.6,
+    "justification": "The provided answer accurately reflects the information presented in the context. It correctly identifies all the contributing factors mentioned for Detroit's shrinking population: long-standing economic and social challenges, high unemployment rates, low levels of education hindering job creation, disinvestment in infrastructure, and a spike in violent crime. Furthermore, it accurately explains how these factors discouraged residents from staying and attracted fewer new residents, leading to the population loss since the 1950s."
   },
   {
     "question": "Which of the following is NOT usually a possible reason for migration?",
     "model_answer": "Reproduction (in the context where animals remain in their original habitats to reproduce) is NOT usually a possible reason for migration.",
     "context": "Among animals, one potential explanation for migration is seasonal reproduction requirements. While many species do migrate in search of mating and breeding opportunities, some animals may remain in their original habitats year-round to reproduce. Therefore, reproductive needs alone are not always a sufficient reason for migration. Other common causes of migration include finding food sources, avoiding harsh weather conditions, and escaping predators or competition for resources.",
-    "score": 0.375,
-    "justification": "The given context states that some animals may remain in their original habitats year-round to reproduce, not that reproduction is not usually a reason for migration. However, the answer correctly infers this by using the word \"usually.\" While it's not an exact match with the provided context, it captures the essence of the information presented and earns a score of 0.75."
+    "score": 0.44999999999999996,
+    "justification": "The given answer correctly states that reproduction is not usually a reason for migration, but this conclusion is not explicitly stated in the provided context as it primarily discusses how reproductive needs alone are not always a sufficient reason for migration (not that they are never a reason). The context does imply, however, that some animals do remain in their original habitats to reproduce and thus can contradict migration for reproductive purposes, which supports the conclusion of the answer."
   },
   {
     "question": "The rehabilitation of old, rundown inner-city neighborhoods by middle- and high-income people is called",
     "model_answer": "Gentrification",
     "context": "This process is commonly referred to as gentrification, a term that describes the transformation of previously neglected or low-income areas into more desirable and economically vibrant communities. Gentrification involves the revitalization of existing buildings and infrastructure through investments in housing, retail spaces, public amenities, and services. It often results in rising property values, increased property taxes, and higher living costs, which can displace long-time residents who may not be able to afford the new housing prices or rents. While gentrification can bring about positive changes such as improved safety, better schools, and increased economic opportunities, it also raises questions about social justice and equity in urban development.",
-    "score": 0.5,
-    "justification": "The term 'Gentrification' is explicitly defined and mentioned in the context, making it a direct answer to the question."
+    "score": 0.6,
+    "justification": "The term \"gentrification\" is explicitly defined and mentioned in the context provided."
   },
   {
     "question": "What is the oldest, biggest, and most widely distributed language family from the Hudson Bay to Tierra del Fuego?",
     "model_answer": "The oldest, largest, and most widely distributed language family in the region stretching from Hudson Bay to Tierra del Fuego is known as the Amerind or Native North American linguistic stock. This family comprises over 1,000 languages.",
     "context": "The indigenous peoples of a vast region spanning from the Hudson Bay in Canada to Tierra del Fuego at the southern tip of South America speak languages that belong to the largest and oldest language family in the Americas. Known as the Amerind or Native North American linguistic stock, this family encompasses over 1,000 languages, making it the most widely distributed language family in the Western Hemisphere. Some of the most notable branches within this linguistic superfamily include Na-Dené, Caddian, Athabaskan-Eskimo, and Quechua-Aymara, among many others. These languages have been spoken for thousands of years and continue to be used by millions of indigenous people across North, Central, and South America.",
-    "score": 0.5,
-    "justification": "The provided answer accurately and completely states all information that can be derived from the context regarding the language family in question (the oldest, largest, most widely distributed) and its name (Amerind or Native North American linguistic stock). The answer also correctly mentions the number of languages within this family (over 1,000)."
+    "score": 0.6,
+    "justification": "The provided answer accurately summarizes all of the key points made in the context, including that the language family stretching from Hudson Bay to Tierra del Fuego is the oldest, largest, and most widely distributed, and it is known as the Amerind or Native North American linguistic stock. Additionally, the answer correctly states that this family encompasses over 1,000 languages."
   },
   {
     "question": "Walter Christaller developed central place theory as a tool to describe the spatial relationships between",
     "model_answer": "Walter Christaller developed central place theory as a tool to describe the spatial relationships between settlements within a region, based on their functions or services.",
     "context": "Walter Christaller was a German geographer and economist who made significant contributions to the field of regional science in the mid-20th century. Central place theory, which he developed, is a concept used to explain the distribution and hierarchy of settlements within a region. The theory suggests that settlements are arranged hierarchically based on their functions or services, with larger, more specialized towns serving as central places for smaller villages and hamlets in the surrounding rural areas. Christaller's work has been influential in understanding regional development patterns and remains relevant today in urban planning and economic geography research.",
     "score": 1.0,
-    "justification": "The entire answer is explicitly stated in the context. The context clearly mentions that Walter Christaller developed Central Place Theory (as a tool) and explains that it describes the spatial relationships between settlements within a region, based on their functions or services."
+    "justification": "The answer is an accurate and complete summary of the information provided in the context regarding Walter Christaller's contribution to regional science and development of central place theory."
   },
   {
     "question": "The idea that people, and not their environment, are the forces that create cultural development is called",
     "model_answer": "The idea that people, and not their environment, are the forces that create cultural development is called Cultural Determinism or Psychological Determinism.",
     "context": "This perspective, commonly known as cultural determinism or psychological determinism, holds that cultural practices, beliefs, and values originate from within individuals rather than external factors such as social, economic, political, or historical circumstances. This concept suggests that individuals are primarily responsible for shaping their own culture through their unique psychological and cognitive processes, rather than being shaped by external influences. It implies that cultures are not fixed or static entities but rather dynamic and continuously evolving systems created by the collective actions and beliefs of individuals within a society. While this perspective has been challenged by alternative views, such as social determinism, it remains a prominent idea in various fields, including psychology, anthropology, and sociology.",
-    "score": 0.5,
-    "justification": "The provided answer (The idea that people, and not their environment, are the forces that create cultural development is called Cultural Determinism or Psychological Determinism) is a direct statement about the definition of the concepts given in the context."
+    "score": 0.6,
+    "justification": "The answer is explicitly stated in the context. The concept of \"Cultural Determinism or Psychological Determinism\" being the idea that people, and not their environment, are the forces that create cultural development is clearly explained in the provided text."
   },
   {
     "question": "The practice of drawing the boundaries of voting districts to give an unfair advantage to one political party is called",
     "model_answer": "Gerrymandering",
     "context": "Gerrymandering is the practice of manipulating the boundaries of electoral districts in order to gain an unfair political advantage for a particular party or group. This term originated in the late 18th century when Governor Elbridge Gerry of Massachusetts signed a redistricting plan that was criticized for creating contorted, salamander-shaped districts. Since then, gerrymandering has become a common tactic employed by political parties to maintain their power and influence in legislative bodies at the local, state, and federal levels. The process typically involves analyzing demographic data, such as race, age, income level, and voter registration, to create district maps that will maximize the number of seats won by the party in power. This can lead to disparities in representation, as districts may be packed with voters from one political persuasion or diluted with voters from another, resulting in an uneven distribution of power. While gerrymandering is a legal practice, it has been criticized for violating principles of fairness and democracy, as well as for potentially suppressing the vote of minority groups and independents.",
-    "score": 0.5,
-    "justification": "The term \"gerrymandering\" is explicitly defined and discussed in the context, making it a complete match with the provided answer."
+    "score": 0.6,
+    "justification": "The term \"Gerrymandering\" is explicitly stated in the context as it is the main topic being discussed. The origin of the term, its definition, and its effects are all mentioned, confirming that the answer is directly supported by the provided context."
   }
 ]
