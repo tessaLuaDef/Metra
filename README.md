@@ -42,7 +42,7 @@ metra/
 │   ├── fairness_datasets/
 │   └── templates_datasets/
 ├── doc/                       # Análisis y documentación generada
-├── notebooks/                # Jupyter notebooks para el análisis de los resultados
+├── notebooks/                 # Jupyter notebooks para el análisis de los resultados
 ├── evaluator/                 # Núcleo del sistema de evaluación
 │   ├── main.py                # CLI principal (comando `metra`)
 │   └── custom_metrics/        # Métricas personalizadas
@@ -57,7 +57,7 @@ metra/
 ## Instalación
 
 ```bash
-git clone https://github.com/tuusuario/metra.git
+git clone https://github.com/tessaLuaDef/Metra.git
 cd metra
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
